@@ -27,7 +27,7 @@ The ESP32-WROOM-32 is the heart of this PCB. It provides:
 The AMS1117-3.3V LDO (Low Dropout Regulator) is used to regulate voltage:  
 - Converts **USB 5V or LiPo 4.2V max** to **3.3V** required by ESP32.  
 - Provides **stable power** under varying loads.  
-- Requires **proper heat dissipation** (thermal vias included).  
+- Requires **proper heat dissipation** (vias included).  
 
 ### 3. CH340G (USB-to-UART Bridge)  
 The CH340G facilitates serial communication between the **ESP32 and a PC**:  
@@ -85,7 +85,7 @@ The schematic includes:
 - **Wide traces for high-current paths (AMS1117, TP4056, LiPo connections).**  
 - **Decoupling capacitors (10µF & 100nF) placed near AMS1117 and ESP32 for stability.**  
 - **Test points added for TX, RX, I2C, and power signals for debugging.**  
-- **Thermal vias included under AMS1117 and TP4056 for heat dissipation.**  
+- **vias included under AMS1117 and TP4056 for heat dissipation.**  
 
 ## Getting Started  
 
