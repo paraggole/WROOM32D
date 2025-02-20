@@ -1,0 +1,5 @@
+Tp4056 datasheet: https://dlnmh9ip6v2uc.cloudfront.net/datasheets/Prototyping/TP4056.pdf
+Mpu6050: https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Datasheet1.pdf
+CH340G: https://snapeda.s3.amazonaws.com/datasheet/CH340DS1.PDF
+AMS1117-3.3V: https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6128/AMS1117-5272.pdf
+Esp32-wroom32d-n4:https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf
