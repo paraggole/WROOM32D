@@ -1,4 +1,4 @@
-# ESP32-WROOM-32 PCB Design: Compact and Efficient ESP32-based PCB with USB-C Power & LiPo Charging  
+# Compact ESP32-based flight controller with onboard IMU, power regulation, dual-cell Li-ion battery support, and integrated charging and USB interface, designed for lightweight drones and mobile robotics platforms with onboard wireless control and telemetry.
 
 ## Overview  
 This PCB design integrates **ESP32-WROOM-32, AMS1117-3.3V, CH340G USB-to-UART, MPU6050 (Accelerometer/Gyro), and a TP4056 LiPo charging module** to create a compact, functional, and manufacturable solution. The design ensures efficient **power management, seamless USB-C/LiPo switching, and debugging capabilities** for ease of use.  
@@ -55,37 +55,6 @@ The MPU6050 is an **I2C-based sensor** used for motion sensing:
 - **Decoupling capacitors (10µF, 100nF)** near AMS1117 and ESP32 for **stability**.  
 - **Pull-up resistors (10kΩ, 100kΩ)** for MOSFET gate control.  
 - **Test points** for easy **voltage and signal monitoring**.  
-
-## Schematic Overview  
-The schematic includes:  
-- **ESP32-WROOM-32** (Main microcontroller).  
-- **CH340G USB-to-UART bridge** (for programming).  
-- **TP4056 LiPo charger** (Handles battery charging from USB-C).  
-- **AO3401A P-MOSFET for power switching** (Automatically selects USB/LiPo).  
-- **AMS1117-3.3V regulator** (Supplies ESP32 from USB or battery).  
-- **MPU6050 accelerometer/gyro** (I2C interface).  
-- **Auto-program circuit** (DTR/RTS control for ESP32 flashing).  
-
-## Power Management & Switching  
-- **USB-C 5V Power**: Powers ESP32 & charges the LiPo battery.  
-- **LiPo Battery (3.7V-4.2V)**: Supplies power when USB is **not** connected.  
-- **Automatic Switching**:  
-  - If **USB is connected**, ESP32 runs on **USB power**, and LiPo **charges**.  
-  - If **USB is disconnected**, ESP32 runs on **battery power**.  
-  - **AO3401A MOSFET + Schottky diode** ensure smooth transition.  
-
-## UART & Programming Circuit  
-- **CH340G USB-to-UART** allows ESP32 programming over USB-C.  
-- **DTR/RTS auto-program circuit** (with **2N7002 transistors** for level shifting).  
-- **TX/RX test points included** for debugging.  
-
-## PCB Layout Considerations  
-- **2-layer PCB with optimal trace routing**.  
-- **Power and ground planes properly separated** to minimize noise.  
-- **Wide traces for high-current paths (AMS1117, TP4056, LiPo connections).**  
-- **Decoupling capacitors (10µF & 100nF) placed near AMS1117 and ESP32 for stability.**  
-- **Test points added for TX, RX, I2C, and power signals for debugging.**  
-- **vias included under AMS1117 and TP4056 for heat dissipation.**  
 
 ## Getting Started  
 
