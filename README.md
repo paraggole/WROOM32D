@@ -1,5 +1,5 @@
-![image](https://github.com/user-attachments/assets/3c5e58f6-7e5a-467b-9b7b-20f2578aba3a)![image](https://github.com/user-attachments/assets/452a68d9-52b9-4608-9b74-4c7b35424b3c)
 ![image](https://github.com/user-attachments/assets/3565dafe-246f-4aea-9638-6be1949bb7d5)
+
 
 # Compact ESP32-based flight controller with onboard IMU, power regulation, dual-cell Li-ion battery support, and integrated charging and USB interface, designed for lightweight drones and mobile robotics platforms with onboard wireless control and telemetry.
 
@@ -16,7 +16,7 @@ This PCB design integrates **ESP32-WROOM-32, AMS1117-3.3V, CH340G USB-to-UART, M
 - **Auto-programming circuit** for ESP32 flashing (CH340G + DTR/RTS circuit).  
 - **Test points** for power monitoring, UART debugging, and I2C signals.  
 - **Reverse polarity and overcurrent protection** for safe operation.  
-
+![image](https://github.com/user-attachments/assets/3c5e58f6-7e5a-467b-9b7b-20f2578aba3a)
 ## Role of Each Component  
 
 ### 1. ESP32-WROOM-32 (Main Microcontroller)  
@@ -74,7 +74,7 @@ The MPU6050 is an **I2C-based sensor** used for motion sensing:
 - Check **TX/RX test points** for serial communication issues.  
 - Measure **test points** to verify correct power switching.  
 - If programming fails, check **DTR/RTS signal** from CH340G.  
-
+![image](https://github.com/user-attachments/assets/452a68d9-52b9-4608-9b74-4c7b35424b3c)
 ## Support & Contributions  
 Found a bug or have improvements? Open an **Issue** or a **Pull Request** on GitHub.  
 
