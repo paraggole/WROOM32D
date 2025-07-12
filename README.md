@@ -1,7 +1,7 @@
 ![image](https://github.com/user-attachments/assets/3565dafe-246f-4aea-9638-6be1949bb7d5)
 
 
-# Compact ESP32-based flight controller with onboard IMU, power regulation, dual-cell Li-ion battery support, and integrated charging and USB interface, designed for lightweight drones and mobile robotics platforms with onboard wireless control and telemetry.
+# Compact ESP32-based flight controller designed for lightweight drones and mobile robotics platforms with onboard wireless control and telemetry.
 
 ## Overview  
 This PCB design integrates **ESP32-WROOM-32, AMS1117-3.3V, CH340G USB-to-UART, MPU6050 (Accelerometer/Gyro), and a TP4056 LiPo charging module** to create a compact, functional, and manufacturable solution. The design ensures efficient **power management, seamless USB-C/LiPo switching, and debugging capabilities** for ease of use.  
